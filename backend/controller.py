@@ -388,9 +388,21 @@ def generateEligibilityReport():
             else:
                 # ensure that questions with category=Other are not more than 50%
                 latestTheoryEvaluationFileName = [fn for fn in os.listdir(f"database/evaluations/survey/{surveyId}") if fn.split("-")[0] == theory.value][-1]
+                
+                try:
+                    file = open(f"database/evaluations/survey/{surveyId}/{latestTheoryEvaluationFileName}")
+                    json.loads(file.read())
+                    file.close()
+                except Exception:
+                    latestTheoryEvaluationFileName = [fn for fn in os.listdir(f"database/evaluations/survey/{surveyId}") if fn.split("-")[0] == theory.value][-2]
+
+
+
                 with open(f"database/evaluations/survey/{surveyId}/{latestTheoryEvaluationFileName}") as file:
                     print("test linux corruptions, path = ",f"database/evaluations/survey/{surveyId}/{latestTheoryEvaluationFileName}")
                     theoryEvaluation = json.load(file)
+
+
                 totalQuestions = sum([record["count"] for record in theoryEvaluation["report"]])
                 totalOtherQuestions = [record["count"] for record in theoryEvaluation["report"] if record["category"]=="Other"][0]
                 percentage:float = totalOtherQuestions/totalQuestions*100
