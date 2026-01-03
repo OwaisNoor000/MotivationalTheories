@@ -1,5 +1,6 @@
 .env
 .vscode
 __pycache__/
+baml_src/
 ai/__pycache__/
 venv/
