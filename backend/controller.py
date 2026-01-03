@@ -218,7 +218,7 @@ def checkExistingReports(params:ReportCheckRequest):
     result = []
     for entry in entries:
         try:
-            with open(f"database/evaluations/survey/{params.surveyId}/{entry["theory"]}-{entry["index"]}.json") as file:
+            with open(f"database/evaluations/survey/{params.surveyId}/{entry['theory']}-{entry['index']}.json") as file:
                 contents = json.load(file)
             entry["contents"] = contents
             contents["index"] = entry["index"]
