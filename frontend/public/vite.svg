@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg class="logo__svg" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46" preserveAspectRatio="xMinYMin meet">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.637 27.1l-.41.41-6.563-6.562 2.9-2.9 3.692 3.691 7.354-7.354 2.9 2.9-9.844 9.845-.029-.03z" fill="#2DCA73"></path>
+        <path fill="#2DCA73" d="M15.302 7.001h6.553v1.066h-6.553zM15.302 34.931h6.553v1.066h-6.553zM4.08 24.755v-6.553h1.065v6.553zM32.01 24.755v-6.553h1.066v6.553z"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.194 7.003H7.962a3.86 3.86 0 00-3.86 3.86v21.232a3.86 3.86 0 003.86 3.86h21.232a3.86 3.86 0 003.86-3.86V10.863a3.86 3.86 0 00-3.86-3.86zM7.962 2.9A7.962 7.962 0 000 10.863v7.34h1.066v6.553H0v7.34a7.962 7.962 0 007.962 7.961h7.34v-1.061h6.553v1.061h7.34a7.962 7.962 0 007.961-7.962v-7.34h-1.061v-6.552h1.061v-7.34a7.962 7.962 0 00-7.962-7.962H7.962zm7.34 0h6.553v1.066h-6.553V2.901z" fill="#2DCA73"></path>
+    </svg>

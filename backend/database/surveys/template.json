@@ -1,0 +1,1 @@
+{"pages": [{"name": "page1", "elements": [{"type": "text", "name": "question1", "showTitle": true}, {"type": "radiogroup", "name": "question2", "showTitle": true, "choices": ["Item 1", "Item 2", "Item 3"]}, {"type": "dropdown", "name": "question3", "showTitle": true, "choices": ["Item 1", "Item 2", "Item 3"]}]}], "headerView": "advanced"}
